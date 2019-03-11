@@ -1,0 +1,102 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[hidelinks,11pt,a4paper,roman]{moderncv}
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 
+\moderncvcolor{blue}     
+\renewcommand{\familydefault}{\rmdefault}                           
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by 
+\usepackage{multicol}
+
+\usepackage[scale=0.75, top=2cm, bottom=1cm]{geometry}
+
+
+\name{Richard-Johnson}{Farukh}
+\mobile{07495360895}
+\email{richard1996johnson@gmail.com}    
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+\vspace*{-10mm}
+
+\section{Education}
+\begin{itemize}
+    \item \cventry{2015--2019}{BSc Hons in Computer Science with IE}{University of Manchester}{}{}{}
+
+    \begin{itemize}    
+        % \cvdoubleitem{Second year (79\% overall)}{}{Third year (83\% 1\textsuperscript{st} sem.)}{} 
+        \cvdoubleitem{Second year (79\% overall)}{}{Third year}{} 
+ 
+        \cvlistdoubleitem{\normalfont{Distributed Computing}}{Advanced Algorithms}
+        \cvlistdoubleitem{\normalfont{Machine Learning}}{Advanced Computer Graphics}
+        \cvlistdoubleitem{\normalfont{Operating systems}}{The Internet of Things}
+        \cvlistdoubleitem{\normalfont{System Architecture}}{Cryptography and Network Security}
+
+    \end{itemize}
+        
+
+    %\item \cventry{2010--2015}{Foreign Language School, Lovech, Bulgaria}{Diploma za Sredno Obrazovanie}{}{}{GPA: 5.78/6 (A*AA equivalent)}
+\end{itemize}
+
+\section{Experience}
+\hfill 
+\subsection{Work Experience}
+\begin{itemize}
+    \item \cventry{2017--2018}{Intern Software Developer}{Team Netsol}{}{}{}
+    \begin{itemize}
+        \item \normalfont{Worked as a developer on numerous projects within an Agile development team. The role involved maintaining and debugging a Java web application with IntelliJ IDEA and using Git and SVN for version control.}
+        \item \normalfont{Developed Bash and Python scripts for automating XML updates, reformatting CSVs and for increasing productivity in day-to-day tasks.}
+        \item \normalfont{Was responsible for updating website templates for customers and personalizing the product's features to a provided spec sheet.}
+        \item \normalfont{Collaborated on an optimization to speed up deployment to customer sites.}
+    \end{itemize}
+\end{itemize}
+
+\subsection{Projects}
+\begin{itemize}%
+\item \textbf{Third Year Project}
+  \begin{itemize}%
+  \item {I am currently writing software in Python 3 that interprets the movements of tickets on a physical task board from photographs.}
+  \item {It uses OpenCV and Numpy to do pixel manipulation, KNN clustering for color grouping, and a CNN classifier for digit recognition. In the backend, it simulates a project tracking service and logs activities.}
+  \end{itemize}
+\item \textbf{Particle System}
+  \begin{itemize}
+    \item {Created a particle system in C++ using OpenGL and GLUT, which allowed the customization of particle sources, rendering types, speed, and gravity.}
+  \end{itemize}
+\item \textbf{FPGA Alarm Clock}
+  \begin{itemize}
+    \item {For my final project in the Microcontrollers course, I wrote an alarm clock in ARM Assembly which simulated concurrency, and allowed interfacing using a keypad, buzzer, and a display, through interrupts and Supervisor calls.}
+  \end{itemize}
+\item \textbf{LED Cube}
+\begin{itemize}
+  \item{At StudentHack IV collaborated on a three dimensional LED cube which operated using an Arduino module. For the project, I wrote algorithms in Java for demonstrating the visualization features of the cube.}
+\end{itemize}
+\end{itemize}
+
+% \section{Languages}
+% \begin{minipage}{\maincolumnwidth}
+%   \begin{multicols}{2}
+%     \textbf{English}{: Fluent}\\
+%     \textbf{Bulgarian}{: Mothertongue}\\
+%     \columnbreak \\
+%     \textbf{Russian}{: Orally fluent}\\
+%     \textbf{Bengali}{: Orally fluent}
+%   \end{multicols}
+% \end{minipage}
+% \vspace*{-\baselineskip}
+
+\section{Interests}
+\begin{itemize}
+  \item \cvitem{Unix}{Exploring Unix has assisted me in many aspects of my previous job, and I enjoy learning command line shortcuts for otherwise mundane tasks.}
+  \item \cvitem{Photography}{My interests in photography and editing sparked my Third Year Project idea, and have been invaluable in helping me understand the image masking aspect of it.}
+\end{itemize}
+\nocite{*}
+
+\end{document}
